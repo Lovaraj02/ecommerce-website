@@ -1,135 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ecommerce</title>
-    <link rel="stylesheet" href="./index.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ecommerce</title>
+  <link rel="stylesheet" href="./index.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
 </head>
 <body>
-
-
-    <div class="header">
-        <div class="elements">
-            <input type="text" placeholder="search for products you want to buy"/><i class="fa-solid fa-magnifying-glass" id="s"></i>
-                <a href="login.html"><i class="fa-solid fa-user"></i> login</a>
-                    <a href="#" onclick="cart()"><i class="fa-solid fa-cart-shopping"></i> cart</a>
-                        <a href="index.html"><i class="fa-solid fa-house"></i> home</a>
-        </div>
-
+  <div class="header">
+    <div class="elements">
+      <input type="text" placeholder="search for products you want to buy" />
+      <i class="fa-solid fa-magnifying-glass" id="s"></i>
+      <a href="login.html"><i class="fa-solid fa-user"></i> login</a>
+      <a href="#" onclick="cart()"><i class="fa-solid fa-cart-shopping"></i> cart</a>
+      <a href="index.html"><i class="fa-solid fa-house"></i> home</a>
     </div>
+  </div>
 
-    <div class="items">
+  <div class="items">
+    <!-- Sample items -->
+    <div class="mydiv"><img src="bat.jpg" alt="bat"><p>Bat</p></div>
+    <div class="mydiv"><img src="cap.jpg" alt="cap"><p>Cap</p></div>
+    <div class="mydiv"><img src="dress.jpg" alt="dress"><p>Dress</p></div>
+    <!-- Add more as needed -->
+  </div>
 
-        <a href="https://www.flipkart.com/mens-casual-shirts/pr?sid=clo,ash,axc,mmk,kp7&fm=neo%2Fmerchandising&iid=M_d65fe245-d781-4878-8aa8-78ca4bcc6fc7_1_372UD5BXDFYS_MC.S4ITKV5A4VL6&otracker=hp_rich_navigation_3_1.navigationCard.RICH_NAVIGATION_Fashion~Men%27s%2BTop%2BWear~Men%27s%2BCasual%2BShirts_S4ITKV5A4VL6&otracker1=hp_rich_navigation_PINNED_neo%2Fmerchandising_NA_NAV_EXPANDABLE_navigationCard_cc_3_L2_view-all&cid=S4ITKV5A4VL6" class="mydiv"/><img src="men-shirt.jpg" class="im"/>Shirts</a>
-            <a href="https://www.flipkart.com/search?q=jeans+for+men&sid=clo%2Cvua%2Ck58%2Ci51&as=on&as-show=on&otracker=AS_QueryStore_OrganicAutoSuggest_2_2_na_na_na&otracker1=AS_QueryStore_OrganicAutoSuggest_2_2_na_na_na&as-pos=2&as-type=RECENT&suggestionId=jeans+for+men%7CMen%27s+Jeans&requestId=590b485c-4d26-4d83-aaba-eda3ab8104ce&as-backfill=on" class="mydiv"/><img src="J4OAA1D5C80-JBLK.jpeg" class="im"/>Phants</a>
-                <a href="https://www.flipkart.com/search?q=mobile+5g&sid=tyy%2C4io&as=on&as-show=on&otracker=AS_QueryStore_OrganicAutoSuggest_1_3_na_na_na&otracker1=AS_QueryStore_OrganicAutoSuggest_1_3_na_na_na&as-pos=1&as-type=RECENT&suggestionId=mobile+5g%7CMobiles&requestId=20d0439e-2d29-4954-8c0c-89dca0fac92d&as-backfill=on" class="mydiv"/><img src="images (1).jpeg" class="im"/>Mobiles</a>
-                    <a href="https://www.flipkart.com/search?q=electronics&as=on&as-show=on&otracker=AS_Query_OrganicAutoSuggest_6_9_na_na_na&otracker1=AS_Query_OrganicAutoSuggest_6_9_na_na_na&as-pos=6&as-type=RECENT&suggestionId=electronics&requestId=93c752c6-4a62-49e0-8d03-2da7dab8e4be&as-backfill=on" class="mydiv"/><img src="images (3).jpeg" class="im"/>electronics</a>
-                        <a href="https://www.flipkart.com/search?q=t+shirt+for+men&sid=clo%2Cash%2Cank%2Cedy&as=on&as-show=on&otracker=AS_QueryStore_OrganicAutoSuggest_1_2_na_na_na&otracker1=AS_QueryStore_OrganicAutoSuggest_1_2_na_na_na&as-pos=1&as-type=RECENT&suggestionId=t+shirt+for+men%7CMen%27s+T-shirts&requestId=a480669a-a3d7-4d12-b5a1-259563f8eef3&as-backfill=on" class="mydiv"/><img src="t-s.jpg" class="im"/>T-Shirts</a>
-    </div>
-
-
-    <div class="lst_of_items">
-        <img src="buds.jpg" class="my_img" onclick="noise()"/>
-            <img src="camera.jpg" class="my_img" onclick="cam()"/>
-                <img src="phone.jpg" class="my_img" onclick="mobile()"/>
-                    <img src="laptop.jpg" class="my_img" onclick="laptop()"/>
-        
-    </div>
-
-    <div class="para">
-
-    <p>noise buds<br><span>mrp ~ 999</span></p>
-        <p>camera<br><span>mrp ~ 1,999</span></p>
-            <p>mobiles<br><span>mrp ~ 35,999</span></p>
-                <p>laptop<br><span>mrp ~ 49,999</span></p>
-    </div>
-
-    <!-- row-2-->
-
-    <div class="lst_of_items">
-        <img src="watch.jpg" class="my_img" onclick="watch()"/>
-        <img src="fridge.jpg" class="my_img" onclick="fridge()"/>
-        <img src="bea.jpg" class="my_img" onclick="beauty()"/>
-        <img src="trimmer.jpg" class="my_img" onclick="trimmer()"/>
-    </div>
-    <div class="para1">
-        <p>smart watch<br><span>mrp ~ 1,499</span></p>
-        <p>fridge<br><span>mrp ~ 31,999</span></p>
-        <p>beauty products<br><span>mrp ~ 699</span></p>
-        <p>trimmer<br><span>mrp ~ 1099</span></p>
-    </div>
-
-    <!-- row-3 -->
-
-    <div class="lst_of_items">
-        <img src="yoga_mat.jpg" class="my_img" onclick="mat()"/>
-        <img src="saree.jpeg" class="my_img" onclick="saree()"/>
-        <img src="slippers.png" class="my_img" onclick="slippers()"/>
-        <img src="dress.jpg" class="my_img" onclick="dress()"/>
-    </div>
-
-
-    <div class="para1">
-        <p>yoga mat<br><span>mrp ~ 349</span></p>
-        <p>saree<br><span>mrp ~ 599</span></p>
-        <p>slippers<br><span>mrp ~ 299</span></p>
-        <p>dress<br><span>mrp ~ 799</span></p>
-    </div>
-
-    <!-- row-4 -->
-
-    <div class="lst_of_items">
-        <img src="sleeve.jpeg" class="my_img" onclick="sleeves()"/>
-        <img src="images (6).jpeg" class="my_img" onclick="sweat_shirt()"/>
-        <img src="perfume.jpg" class="my_img" onclick="perfume()"/>
-        <img src="bat.jpg" class="my_img" onclick="bat()"/>
-    </div>
-    <div class="para1">
-        <p>sleeves<br><span>mrp ~ 199</span></p>
-        <p>sweat shirt<br><span>mrp ~ 999</span></p>
-        <p>perfume<br><span>mrp ~ 499</span></p>
-        <p>bat<br><span>mrp ~ 1299</span></p>
-    </div>
-
-    <!-- row-5 -->
-
-    <div class="lst_of_items">
-        <img src="cap.jpg" class="my_img" onclick="cap()"/>
-        <img src="shit.jpg" class="my_img" onclick="shirt()"/>
-        <img src="cooling glass.jpg" class="my_img" onclick="glasses()"/>
-        <img src="baniyan.jpg" class="my_img" onclick="baniyan()"/>
-        
-    </div>
-    <div class="para">
-    <p>cap<br><span>mrp ~ 899</span></p>
-    <p>shirt<br><span>mrp ~ 499</span></p>
-    <p>cooling glasses<br><span>mrp ~ 299</span></p>
-    <p>baniyan<br><span>mrp ~ 99</span></p>
-    </div>
-
-    <div class="contact">
-        <a href="https://www.instagram.com"/><i class="fa-brands fa-instagram" id="mya"></i></a>
-        <a href="https://www.linkedin.com/in/jaya-lova-raju-bandaru-52b09b275/"/><i class="fa-brands fa-linkedin" id="mya"></i></a>
-        <a href="https://github.com/alshedivat/al-folio/tree/master"/><i class="fa-brands fa-github" id="mya"></i></a>
-        
-    </div>
-    <div class="contact1">
-        <a href="https://mail.google.com/mail/u/0/#inbox?compose=new">rajubandaru2255@gmail.com</a>
-    </div>
-    
-    <script src="./index.js"></script>
+  <script src="index.js"></script>
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
